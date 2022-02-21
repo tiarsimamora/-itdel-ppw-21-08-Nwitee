@@ -1,0 +1,503 @@
+body{
+    background-color:snow; 
+}
+header{
+    background: #fff;
+    height: 75px;
+    width: 1000px;;
+    margin-top: -8px;
+    margin-left: 145px;
+    border-radius:5pt;
+    position: absolute;
+}
+
+header {
+color: rgb(0, 0, 0);
+}
+
+.text-headers{
+    color:#000000;
+    margin-left: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.logo{
+    position: absolute;
+    float: left;
+    width: 150px;
+    height: 85px;
+    margin-left: 4px;
+    margin-top:-62px;
+    border-radius: 2ch;
+    box-shadow: 0 4px 6px 0 rgba(145, 139, 139, 0.801), 0 6px 20px 0 rgba(255, 250, 250, 0.19); ;
+}
+.gambar{
+    position:relative;
+    width: 150px;
+    height: 90px;
+    border-radius: 10%;
+}
+.icon-headers{
+    position: absolute;
+    top: 50px;
+    transform : translateX(-80px);
+    width: 100%;  
+}
+.tombnotif{
+    display : inline-block;
+    margin-left: 700px;
+    position: absolute;
+    color:#000000;
+}
+.tombnotif:hover{
+    color: #2980b9;
+}
+@media screen and (max-width: 500px) {
+    .icon-header {
+    float: none;
+    display: block;
+    }
+}
+
+/* Sidebar */
+.sidebar{
+    position:absolute;
+    float:left;
+    top: 0px;
+    left: -5%;
+    margin:0 auto;
+    width: 100px;
+    height: 200%;
+    background-color:#cedfff;
+    padding: 5% ; 
+    border-radius: 0pt;
+    border-right: 1px solid lightgrey;
+ 
+}
+
+.sidebar ul{
+    padding:5px;
+    margin:0;
+    margin-top: 25px;
+    left: -20%;
+    width: 50px;
+    list-style-type: none;
+    border-bottom:1px solid #f5edf0;
+}
+.sidebar li a{
+    display:inline-flex;
+    text-align: center;
+    margin-top: -20%;
+    width: 100px;
+    font-family: 'Times New Roman', cursive;
+    font-size: 18px;
+    padding: 20px;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+.sidebar li a:hover{
+    background-color: rgb(5, 75, 116);
+    color:rgb(238, 235, 235);
+}
+@media screen and (max-width: 500px) {
+    .sidebar li a {
+      float: none;
+      display: block;
+    }
+}
+.search input[type=text] {
+    padding: 7px 20px;
+    
+    font-size: 17px;
+    border: 1px solid grey;
+    margin-left: 80%;
+    margin-top: -12px;
+    width: 10%;
+    border-radius: 15ch;
+    background: #f1f1f1;
+    position: absolute;
+}
+.search button {
+    position:sticky;
+    width: 5%;
+    padding: 7px 15px;
+    border-radius: 15ch;
+    background:rgb(5, 75, 116);
+    color: white;
+    font-size: 17px;
+    margin-left: 90%;
+    margin-top: -20px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+
+}
+.search button :hover {
+    background-color: rgb(12, 102, 155);
+    color:#fff;
+}
+
+.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.status input{
+    position: absolute;
+    padding: 100px 150px;
+    margin-left: 300px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    width: 20%;
+    background:solid rgba(54, 57, 59, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(145, 139, 139, 0.801), 0 6px 20px 0 rgba(255, 250, 250, 0.19); ;  
+}
+
+/* Dropdown Button */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+/* .show {display:block;}
+.status button{
+    Position:absolute;
+    top: 250px;
+    width: 5%;
+    padding: 5px;
+    background: rgb(5, 75, 116);
+    color: white;
+    font-size: 17px;
+    margin-left: 780px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders 
+    cursor: pointer;
+}
+.status button :hover {
+    background: #0e5691;
+  }
+.status::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+@media screen and (max-width: 500px) {
+    .status input{
+      float: none;
+      display: block;
+    }
+} */
+/*Create Posting*/
+.createpost input{
+    position: absolute;
+    padding: 80px 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 17px;
+    float: left;
+    width: 20%;
+    border-radius: 5pt;
+    box-shadow: 0 4px 8px 0 rgba(145, 139, 130, 0.801), 0 6px 20px 0 rgb(255, 255, 255);
+    border: #f9f9fa;
+}
+.createpost button{
+    top: 150px;
+    width: 5%;
+    padding: 7px 15px;
+    position: relative;
+    background: rgb(5, 75, 116);
+    color: white;
+    font-size: 17px;
+    margin-top: 150px;
+    margin-left: 800px;
+    border-radius: 50pt;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+.createpost button:hover {
+    background-color: rgb(12, 102, 155);
+    color:#fff;
+    border-radius: 15ch;
+    padding: 7px 15px;
+    width: 5%;
+
+  }
+.createpost::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.createpost-icon{
+    position: absolute;
+    top: 240px;
+    left: -100px;
+    line-height: 40px;
+    transform : translateX(-115px);
+    width: 90%;
+    text-align: center;
+}
+    
+.tombpost{
+    display : inline-block;
+    width: 50px;
+    height: 40px;
+    margin : 5px;
+    background: #ffff;
+    overflow : hidden;
+    position: relative;
+    color: #2980b9;
+    }
+.tombpost:hover{
+    background: lightgrey;
+    border-radius: 10ch;
+}
+@media screen and (max-width: 500px) {
+    .createpost-icon {
+    float: none;
+    display: block;
+    }
+}
+
+/*Status*/
+.post-display{
+    margin-top:120px;
+}
+.postingan{
+    width:650px;
+    background:#fff;
+    border-radius:10px;
+    padding:10px;
+    margin:15px;
+    margin-left:15% ;
+    box-shadow: 0 4px 8px 0 rgba(145, 139, 130, 0.801), 0 6px 20px 0 rgb(255, 255, 255);
+    border: #f9f9fa;
+    
+}
+
+.user-info{
+    display:contents;
+    align-items: center;
+    padding:10px;
+    margin-top: 5%;
+}
+
+.user-info .profilephoto{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.user-info .profilephoto > img{
+    width:100%;
+    cursor:pointer;
+}
+
+.user-info .post-info{
+    margin-left:10px;    
+    font-weight: bold;
+}
+
+.user-info .post-info .name{
+    cursor:pointer;
+    font-size:16px;
+}
+
+.user-info .post-info .time{
+    font-size:12px;
+    cursor:pointer;
+}
+
+.user-info i{
+    margin-left:auto;
+    cursor: pointer;
+}
+
+.user-info > input{
+    height:40px;
+    padding:5px 10px;
+    border-radius:25px;
+    outline:none;
+    border:none;
+    flex:1;
+    background:#eee;
+    margin-left:10px;
+}
+
+.post-content{
+    font-size:16px;
+    font-weight:normal;
+    padding:10px;
+}
+
+.post-content > img{
+    width:100%;
+    margin:5px 0px;
+}
+
+.LCS{
+    box-shadow: 1px solid #ddd;
+    display:flex;
+    justify-content: space-between;
+    /* color: #3299CD;*/
+    padding:5px 5px 0px 5px; 
+}
+.LCS .action:hover{
+    color: rgb(50, 126, 214);
+}
+
+.post .LCS .action{
+    padding:10px;
+    border-radius:10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.post .post-bottom .action:hover{
+    background:#eee;
+}
+
+
+/*button like-unlike*/
+
+.status-like, .status-unlike ,.status-comment{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #3299CD;
+    cursor: pointer;
+    display:inline-block;  
+}
+.status-like:hover, .status-unlike:hover, .status-comment:hover {
+  text-decoration:none;
+  color:rgb(28, 154, 238);
+}
+.status-like {
+    border-top-left-radius: 5px;
+}
+.status-unlike {
+    margin-left: 20px;
+    border-top-right-radius: 5px;
+}
+.status-comment {
+    margin-left: 20px;
+    border-top-right-radius: 5px;
+}
+.count, .like, .unlike, .comment {
+    padding:10px;
+}
+.count, .unlike, .comment {
+    display:flex;
+    border-radius: 50%;
+    font-size:12px;
+}
+.unlike {
+    margin-left: -10px;
+}
+.count {
+    margin-right: -10px;
+}
+
+.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+.fa:hover {
+    color: rgb(50, 126, 214);
+  }
+.information-bar{
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    width: 250px;
+    height: 1500px;
+    margin-left: 900px;
+    background-color: whitesmoke;
+    padding: 10px ;
+    border-radius:5pt;
+    box-shadow: 0 4px 8px 0 rgba(145, 139, 139, 0.801), 0 6px 20px 0 rgba(255, 250, 250, 0.19); ;
+    
+}
+.navbar-menu{
+    position: relative;
+    background-color: rgb(12, 102, 155);
+    color: white;
+    padding:20px 20px;
+    height: 0px;
+    font-size: 14px;
+    margin-top: -10%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 900px;
+}
+.nav .navbar-nav{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left:800px;
+}
+
+.form-control{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    padding:10px 12px;
+    text-align: center;
+    border: #f9f9fa;
+}
+
+
+

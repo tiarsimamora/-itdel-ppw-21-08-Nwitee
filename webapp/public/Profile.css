@@ -1,0 +1,158 @@
+.profile{
+  width: 80%;
+  background-color: #eaebf0;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 25px;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.profile .update{
+  margin-top: 20px;
+}
+.profile .update input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.profile .update input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.profile .update input[type=submit] {
+  width: fit-content;
+  background-color: #5EA3F2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.profile div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*CSS Halaman Profile*/
+body{
+  background-color: #ffffff;
+  display: block;
+}
+
+header{
+  background: #ffffff;
+  height: 90px;
+  width: 100%;
+  margin-top: -90px;
+  margin-left: -8px;
+  border-radius:5pt;
+  position: absolute;
+}
+
+header * {
+color: white;
+}
+
+
+.logo{
+  position: absolute;
+  float: left;
+  width: 150px;
+  height: 85px;
+  margin-left: -15px;
+  margin-top: -15px;
+  border-radius: 2ch;
+  box-shadow: 0 4px 6px 0 rgba(145, 139, 139, 0.801), 0 6px 20px 0 rgba(255, 250, 250, 0.19); ;
+}
+.gambar{
+  position:relative;
+  width: 150px;
+  height: 90px;
+  border-radius: 10%;
+}
+.icon-headers{
+  position: absolute;
+  top: 50px;
+  transform : translateX(-80px);
+  width: 100%;  
+}
+.tombnotif{
+  display : inline-block;
+  margin-left: 700px;
+  position: absolute;
+  color:#000000;
+}
+.tombnotif:hover{
+  color: #2980b9;
+}
+@media screen and (max-width: 500px) {
+  .icon-header {
+  float: none;
+  display: block;
+  }
+}
+
+/* Sidebar */
+.sidebar{
+  position:absolute;
+  float:left;
+  top: 91px;
+  left: -6%;
+  margin:0 auto;
+  width: 98px;
+  height: 200%;
+  background-color:#cedfff;
+  padding: 5% ; 
+  border-radius: 2pt;
+  border-right: 1px solid lightgrey;
+
+}
+
+.sidebar ul{
+  padding:5px;
+  margin:0;
+  margin-top: -40px;
+  left: -4%;
+  width: 50px;
+  list-style-type: none;
+  border-bottom:1px solid #f5edf0;
+}
+.sidebar li a{
+  display:inline-flex;
+  margin-top: -20%;
+  width: 100px;
+  font-family: 'Times New Roman', cursive;
+  font-size: 15px;
+  padding: 20px;
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+.sidebar li a:hover{
+  background-color: rgb(5, 75, 116);
+  color:rgb(238, 235, 235);
+}
+@media screen and (max-width: 500px) {
+  .sidebar li a {
+    float: none;
+    display: block;
+  }
+}
